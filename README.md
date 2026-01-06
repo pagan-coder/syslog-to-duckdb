@@ -18,9 +18,6 @@ sudo nano /etc/rsyslog.conf
 Add:
 
 ```
-# UDP server
-module(load="imudp")
-input(type="imudp" port="514")
 *.* @127.0.0.1:514
 ```
 
